@@ -1,0 +1,356 @@
+/* ===================================
+   FMCI Typography Override
+   Separate fonts for headings and body
+   =================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Alternative Font Options (uncomment to use):
+
+Option 1: Serif Headings + Sans Body
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+Option 2: Modern & Bold
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap');
+
+Option 3: Classic & Elegant
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@300;400;600;700&display=swap');
+
+Option 4: Traditional Church Style
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+*/
+
+/* ===================================
+   BODY TEXT - Inter (Clean & Readable)
+   =================================== */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Lists */
+ul, ol, li {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+/* Lead Text */
+.uk-text-lead {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Small Text */
+.uk-text-small,
+.uk-text-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+}
+
+/* Form Elements */
+.uk-input,
+.uk-select,
+.uk-textarea,
+.uk-button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation */
+.uk-navbar-nav > li > a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* ===================================
+   HEADINGS - Playfair Display (Elegant & Bold)
+   =================================== */
+
+h1, h2, h3, h4, h5, h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+.uk-heading-2xlarge,
+.uk-card-title,
+.uk-article-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--fmci-primary, #451614);
+    letter-spacing: -0.5px;
+}
+
+/* H1 Styles */
+h1,
+.uk-heading-large,
+.uk-heading-xlarge {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* H2 Styles */
+h2,
+.uk-heading-medium {
+    font-weight: 700;
+}
+
+/* H3 Styles */
+h3,
+.uk-heading-small {
+    font-weight: 700;
+}
+
+/* H4-H6 Styles */
+h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Logo */
+.uk-logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Light Headings (for dark backgrounds) */
+.uk-light h1,
+.uk-light h2,
+.uk-light h3,
+.uk-light h4,
+.uk-light h5,
+.uk-light h6,
+.uk-light .uk-heading-large,
+.uk-light .uk-heading-medium,
+.uk-light .uk-heading-small {
+    color: var(--fmci-white, #ffffff);
+}
+
+/* ===================================
+   FONT WEIGHT UTILITIES
+   =================================== */
+
+.uk-text-light {
+    font-weight: 300;
+}
+
+.uk-text-normal {
+    font-weight: 400;
+}
+
+.uk-text-medium {
+    font-weight: 500;
+}
+
+.uk-text-bold {
+    font-weight: 700;
+}
+
+.uk-text-bolder {
+    font-weight: 800;
+}
+
+/* ===================================
+   RESPONSIVE TYPOGRAPHY
+   =================================== */
+
+/* Desktop */
+@media (min-width: 960px) {
+    body {
+        font-size: 16px;
+    }
+    
+    h1, .uk-heading-large {
+        font-size: 3.5rem;
+    }
+    
+    h2, .uk-heading-medium {
+        font-size: 2.5rem;
+    }
+    
+    h3, .uk-heading-small {
+        font-size: 1.75rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+    
+    h5 {
+        font-size: 1.25rem;
+    }
+    
+    h6 {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 959px) {
+    body {
+        font-size: 15px;
+    }
+    
+    h1, .uk-heading-large {
+        font-size: 2.5rem;
+    }
+    
+    h2, .uk-heading-medium {
+        font-size: 2rem;
+    }
+    
+    h3, .uk-heading-small {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+    body {
+        font-size: 15px;
+    }
+    
+    h1, .uk-heading-large {
+        font-size: 2rem;
+    }
+    
+    h2, .uk-heading-medium {
+        font-size: 1.75rem;
+    }
+    
+    h3, .uk-heading-small {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    h5 {
+        font-size: 1.125rem;
+    }
+    
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+/* ===================================
+   SPECIAL TEXT ELEMENTS
+   =================================== */
+
+/* Blockquotes */
+blockquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--fmci-accent, #8A4326);
+}
+
+/* Scripture Quotes */
+.scripture-quote,
+.bible-verse {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--fmci-primary, #451614);
+}
+
+/* Emphasized Text */
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+/* ===================================
+   ALTERNATIVE FONT COMBINATIONS
+   Uncomment the section you prefer
+   =================================== */
+
+/*
+// Option 1: Serif Headings + Sans Body
+h1, h2, h3, h4, h5, h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small {
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+body, p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+*/
+
+/*
+// Option 2: Modern & Bold
+h1, h2, h3, h4, h5, h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, p, a, li {
+    font-family: 'Lato', sans-serif;
+}
+*/
+
+/*
+// Option 3: Classic & Elegant
+h1, h2, h3, h4, h5, h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+body, p, a, li {
+    font-family: 'Raleway', sans-serif;
+}
+*/
+
+/*
+// Option 4: Traditional Church Style
+h1, h2, h3, h4, h5, h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small {
+    font-family: 'EB Garamond', Georgia, serif;
+}
+
+body, p, a, li {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+*/
