@@ -217,6 +217,31 @@ a:hover {
     box-shadow: 0 0 0 3px rgba(138, 67, 38, 0.1);
 }
 
+/* Placeholder text styling */
+.uk-input::placeholder,
+.uk-textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.uk-input::-webkit-input-placeholder,
+.uk-textarea::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.uk-input::-moz-placeholder,
+.uk-textarea::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.uk-input:-ms-input-placeholder,
+.uk-textarea:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
 /* Off-canvas Menu */
 .uk-offcanvas-bar {
     background: var(--fmci-primary);
