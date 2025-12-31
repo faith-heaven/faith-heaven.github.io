@@ -313,12 +313,25 @@ footer p {
 
 /* Footer Social Icons - Visible on light background */
 footer .uk-icon-button {
-    background: var(--fmci-accent);
-    color: var(--fmci-white);
+    background: var(--fmci-primary);
+    color: var(--fmci-secondary);
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .uk-icon-button:hover {
     background: var(--fmci-secondary);
+    color: var(--fmci-primary);
+}
+
+footer .uk-icon-button svg {
+    color: var(--fmci-secondary);
+}
+
+footer .uk-icon-button:hover svg {
     color: var(--fmci-primary);
 }
 
