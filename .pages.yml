@@ -1,60 +1,70 @@
-collections:
-  - name: pages
-    label: Pages
-    files:
-      - name: home
-        label: Homepage
-        file: index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: contact
-        label: Contact
-        file: contact/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: livestream
-        label: Livestream
-        file: livestream/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: media
-        label: Media
-        file: media/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: privacy
-        label: Privacy Policy
-        file: privacy/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: radio
-        label: Radio
-        file: radio/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
-      - name: terms
-        label: Terms of Service
-        file: terms/index.html
-        fields:
-          - name: html
-            label: HTML Content
-            type: code
-            code_language: html
+content:
+  - name: home
+    label: Homepage
+    type: file
+    path: index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: contact
+    label: Contact
+    type: file
+    path: contact/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: livestream
+    label: Livestream
+    type: file
+    path: livestream/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: media
+    label: Media
+    type: file
+    path: media/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: privacy
+    label: Privacy Policy
+    type: file
+    path: privacy/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: radio
+    label: Radio
+    type: file
+    path: radio/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
+  
+  - name: terms
+    label: Terms of Service
+    type: file
+    path: terms/index.html
+    fields:
+      - name: html
+        label: HTML Content
+        type: code
+        code_language: html
