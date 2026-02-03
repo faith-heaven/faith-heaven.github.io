@@ -4,67 +4,60 @@ content:
     type: file
     path: index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: contact
     label: Contact
     type: file
     path: contact/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: livestream
     label: Livestream
     type: file
     path: livestream/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: media
     label: Media
     type: file
     path: media/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: privacy
     label: Privacy Policy
     type: file
     path: privacy/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: radio
     label: Radio
     type: file
     path: radio/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
   
   - name: terms
     label: Terms of Service
     type: file
     path: terms/index.html
     fields:
-      - name: html
+      - name: body
         label: HTML Content
-        type: code
-        code_language: html
+        type: rich-text
