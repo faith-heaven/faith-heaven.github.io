@@ -2,62 +2,215 @@ content:
   - name: home
     label: Homepage
     type: file
-    path: index.html
+    path: content/home.json
     fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: contact
-    label: Contact
-    type: file
-    path: contact/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: livestream
-    label: Livestream
-    type: file
-    path: livestream/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: media
-    label: Media
-    type: file
-    path: media/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: privacy
-    label: Privacy Policy
-    type: file
-    path: privacy/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: radio
-    label: Radio
-    type: file
-    path: radio/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
-  
-  - name: terms
-    label: Terms of Service
-    type: file
-    path: terms/index.html
-    fields:
-      - name: body
-        label: HTML Content
-        type: rich-text
+      # Top Bar
+      - name: phone1
+        label: Phone Number 1
+        type: string
+      - name: phone2
+        label: Phone Number 2
+        type: string
+      - name: email
+        label: Email Address
+        type: string
+      - name: email_display
+        label: Email Display Text
+        type: string
+      - name: tagline
+        label: Church Tagline (Mobile)
+        type: string
+      
+      # Social Links
+      - name: youtube_link
+        label: YouTube Link
+        type: string
+      - name: instagram_link
+        label: Instagram Link
+        type: string
+      - name: facebook_link
+        label: Facebook Link
+        type: string
+      - name: twitter_link
+        label: Twitter Link
+        type: string
+      
+      # Hero Section
+      - name: hero_bg_image
+        label: Hero Background Image URL
+        type: string
+      - name: hero_heading
+        label: Hero Heading
+        type: string
+      - name: hero_tagline
+        label: Hero Tagline
+        type: string
+      - name: hero_description
+        label: Hero Description
+        type: text
+      
+      # Mission & Vision
+      - name: mission_image
+        label: Mission Section Image URL
+        type: string
+      - name: mission_heading
+        label: Mission Heading
+        type: string
+      - name: mission_text
+        label: Mission Statement
+        type: text
+      - name: vision_heading
+        label: Vision Heading
+        type: string
+      - name: vision_text
+        label: Vision Statement
+        type: text
+      - name: branches_count
+        label: Branch Count Text
+        type: string
+      
+      # Ministries Section
+      - name: ministries_heading
+        label: Ministries Section Heading
+        type: string
+      - name: ministries_tagline
+        label: Ministries Tagline
+        type: string
+      
+      # Leadership Section
+      - name: leadership_heading
+        label: Leadership Section Heading
+        type: string
+      - name: leadership_tagline
+        label: Leadership Tagline
+        type: string
+      
+      # Bishop 1
+      - name: bishop1_photo
+        label: Bishop 1 Photo URL
+        type: string
+      - name: bishop1_name
+        label: Bishop 1 Name
+        type: string
+      - name: bishop1_title
+        label: Bishop 1 Title
+        type: string
+      - name: bishop1_bio
+        label: Bishop 1 Bio
+        type: text
+      
+      # Bishop 2
+      - name: bishop2_photo
+        label: Bishop 2 Photo URL
+        type: string
+      - name: bishop2_name
+        label: Bishop 2 Name
+        type: string
+      - name: bishop2_title
+        label: Bishop 2 Title
+        type: string
+      - name: bishop2_bio
+        label: Bishop 2 Bio
+        type: text
+      
+      # Scripture Verses
+      - name: verse1_text
+        label: Scripture Verse 1 Text
+        type: text
+      - name: verse1_ref
+        label: Scripture Verse 1 Reference
+        type: string
+      - name: verse2_text
+        label: Scripture Verse 2 Text
+        type: text
+      - name: verse2_ref
+        label: Scripture Verse 2 Reference
+        type: string
+      
+      # Giving Section
+      - name: giving_heading
+        label: Giving Section Heading
+        type: string
+      - name: giving_verse
+        label: Giving Scripture Verse
+        type: text
+      - name: mpesa_women_paybill
+        label: Women's Ministry Paybill
+        type: string
+      - name: mpesa_women_account
+        label: Women's Ministry Account
+        type: string
+      - name: mpesa_radio_paybill
+        label: Radio Ministry Paybill
+        type: string
+      - name: mpesa_radio_account
+        label: Radio Ministry Account
+        type: string
+      - name: mpesa_church_paybill
+        label: Church Offering Paybill
+        type: string
+      - name: mpesa_church_account
+        label: Church Offering Account
+        type: string
+      
+      # Global Reach Section
+      - name: global_heading
+        label: Global Section Heading
+        type: string
+      - name: global_tagline
+        label: Global Section Tagline
+        type: string
+      - name: stat_branches
+        label: Number of Branches
+        type: string
+      - name: stat_countries
+        label: Number of Countries
+        type: string
+      
+      # Events Section
+      - name: events_heading
+        label: Events Heading
+        type: string
+      - name: events_tagline
+        label: Events Tagline
+        type: string
+      
+      # Footer
+      - name: footer_description
+        label: Footer Description
+        type: text
+      - name: footer_youtube_link
+        label: Footer YouTube Link
+        type: string
+      - name: footer_instagram_link
+        label: Footer Instagram Link
+        type: string
+      - name: footer_facebook_link
+        label: Footer Facebook Link
+        type: string
+      - name: footer_twitter_link
+        label: Footer Twitter Link
+        type: string
+      - name: footer_address
+        label: Footer Address
+        type: text
+      - name: footer_phone1
+        label: Footer Phone 1
+        type: string
+      - name: footer_phone2
+        label: Footer Phone 2
+        type: string
+      - name: footer_email
+        label: Footer Email
+        type: string
+      - name: footer_website
+        label: Footer Website
+        type: string
+      
+      # Newsletter Section
+      - name: newsletter_heading
+        label: Newsletter Heading
+        type: string
+      - name: newsletter_description
+        label: Newsletter Description
+        type: text
