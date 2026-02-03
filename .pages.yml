@@ -214,3 +214,208 @@ content:
       - name: newsletter_description
         label: Newsletter Description
         type: text
+
+  - name: contact
+    label: Contact Page
+    type: file
+    path: content/contact.json
+    fields:
+      # Top Bar (shared)
+      - name: phone1
+        label: Phone Number 1
+        type: string
+      - name: phone2
+        label: Phone Number 2
+        type: string
+      - name: email
+        label: Email Address
+        type: string
+      - name: email_display
+        label: Email Display Text
+        type: string
+      - name: tagline
+        label: Church Tagline (Mobile)
+        type: string
+      
+      # Social Links (shared)
+      - name: youtube_link
+        label: YouTube Link
+        type: string
+      - name: instagram_link
+        label: Instagram Link
+        type: string
+      - name: facebook_link
+        label: Facebook Link
+        type: string
+      - name: twitter_link
+        label: Twitter Link
+        type: string
+      
+      # Hero Section
+      - name: hero_bg_image
+        label: Hero Background Image URL
+        type: string
+      - name: hero_heading
+        label: Hero Heading
+        type: string
+      - name: hero_description
+        label: Hero Description
+        type: text
+      
+      # Contact Info Cards
+      - name: card_address
+        label: Address Card Text
+        type: text
+      - name: card_phone1
+        label: Card Phone 1
+        type: string
+      - name: card_phone2
+        label: Card Phone 2
+        type: string
+      - name: card_email
+        label: Card Email
+        type: string
+      - name: card_website
+        label: Card Website
+        type: string
+      
+      # Contact Form Section
+      - name: form_heading
+        label: Form Section Heading
+        type: string
+      - name: form_description
+        label: Form Description
+        type: text
+      - name: form_note
+        label: Form Footer Note
+        type: text
+      
+      # Map Section
+      - name: map_embed
+        label: Google Maps Embed URL
+        type: string
+      - name: map_title
+        label: Map Card Title
+        type: string
+      - name: map_address
+        label: Map Address Line
+        type: string
+      - name: map_pobox
+        label: Map P.O. Box
+        type: string
+      - name: map_phones
+        label: Map Phone Numbers
+        type: string
+      - name: map_email
+        label: Map Email
+        type: string
+      - name: branches_cta_heading
+        label: Branches CTA Heading
+        type: string
+      - name: branches_cta_text
+        label: Branches CTA Text
+        type: text
+      
+      # Featured Branches Section
+      - name: branches_heading
+        label: Branches Section Heading
+        type: string
+      - name: branches_tagline
+        label: Branches Tagline
+        type: string
+      
+      # Branch 1
+      - name: branch1_label
+        label: Branch 1 Label
+        type: string
+      - name: branch1_name
+        label: Branch 1 Name
+        type: string
+      - name: branch1_location
+        label: Branch 1 Location
+        type: string
+      - name: branch1_phone
+        label: Branch 1 Phone
+        type: string
+      - name: branch1_times
+        label: Branch 1 Service Times
+        type: string
+      
+      # Branch 2
+      - name: branch2_label
+        label: Branch 2 Label
+        type: string
+      - name: branch2_name
+        label: Branch 2 Name
+        type: string
+      - name: branch2_location
+        label: Branch 2 Location
+        type: string
+      - name: branch2_phone
+        label: Branch 2 Phone
+        type: string
+      - name: branch2_times
+        label: Branch 2 Service Times
+        type: string
+      
+      # Branch 3
+      - name: branch3_label
+        label: Branch 3 Label
+        type: string
+      - name: branch3_name
+        label: Branch 3 Name
+        type: string
+      - name: branch3_location
+        label: Branch 3 Location
+        type: string
+      - name: branch3_phone
+        label: Branch 3 Phone
+        type: string
+      - name: branch3_times
+        label: Branch 3 Service Times
+        type: string
+      
+      # Branches Footer
+      - name: branches_footer_text
+        label: Branches Footer Text
+        type: string
+      
+      # Footer (shared)
+      - name: footer_description
+        label: Footer Description
+        type: text
+      - name: footer_youtube_link
+        label: Footer YouTube Link
+        type: string
+      - name: footer_instagram_link
+        label: Footer Instagram Link
+        type: string
+      - name: footer_facebook_link
+        label: Footer Facebook Link
+        type: string
+      - name: footer_twitter_link
+        label: Footer Twitter Link
+        type: string
+      - name: footer_address
+        label: Footer Address
+        type: text
+      - name: footer_phone1
+        label: Footer Phone 1
+        type: string
+      - name: footer_phone2
+        label: Footer Phone 2
+        type: string
+      - name: footer_email
+        label: Footer Email
+        type: string
+      - name: footer_website
+        label: Footer Website
+        type: string
+      
+      # Newsletter Section (shared)
+      - name: newsletter_heading
+        label: Newsletter Heading
+        type: string
+      - name: newsletter_description
+        label: Newsletter Description
+        type: text
