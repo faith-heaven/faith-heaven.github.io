@@ -35,17 +35,16 @@
       return;
     }
 
-    // Fetch the content JSON
-    fetch(contentFile)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        applyContentToPage(data);
-        console.log('FHC CMS: Content loaded successfully from', contentFile);
+    // Load shared site settings first, then page-specific content
+    Promise.all([
+      fetch('/content/site-settings.json').then(r => r.ok ? r.json() : {}),
+      fetch(contentFile).then(r => r.ok ? r.json() : {})
+    ])
+      .then(([sharedData, pageData]) => {
+        // Merge shared settings with page data (page data takes precedence)
+        const mergedData = { ...sharedData, ...pageData };
+        applyContentToPage(mergedData);
+        console.log('FHC CMS: Content loaded successfully');
       })
       .catch(error => {
         console.log('FHC CMS: Content not yet available or error loading:', error.message);
