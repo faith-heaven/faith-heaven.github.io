@@ -20,25 +20,25 @@
 					<div class="uk-grid-small uk-child-width-auto uk-flex-middle uk-visible@s" uk-grid>
 						<div>
 							<span uk-icon="icon: receiver; ratio: 0.8"></span>
-							<a href="tel:0700105721" class="uk-text-small">0700105721</a> / 
-							<a href="tel:0799214158" class="uk-text-small">0799214158</a>
+							<a href="tel:0700105721" class="uk-text-small" data-editable="phone1">0700105721</a> / 
+							<a href="tel:0799214158" class="uk-text-small" data-editable="phone2">0799214158</a>
 						</div>
 						<div>
-							<a href="mailto:faithministriesandchurches@gmail.com" class="uk-text-small">
-								<span uk-icon="icon: mail; ratio: 0.8"></span> faithministriesandchurches@gmail.com
+							<a href="mailto:faithministriesandchurches@gmail.com" class="uk-text-small" data-editable="email">
+								<span uk-icon="icon: mail; ratio: 0.8"></span> <span data-editable="email-display">faithministriesandchurches@gmail.com</span>
 							</a>
 						</div>
 					</div>
 					<div class="uk-hidden@s">
-						<span class="uk-text-small uk-text-bold">A Church Without Walls</span>
+						<span class="uk-text-small uk-text-bold" data-editable="tagline">A Church Without Walls</span>
 					</div>
 				</div>
 				<div class="uk-width-auto">
 					<div class="uk-grid-small uk-child-width-auto" uk-grid>
-						<div><a href="#" class="uk-icon-link" uk-icon="icon: youtube; ratio: 0.9" aria-label="YouTube"></a></div>
-						<div><a href="#" class="uk-icon-link" uk-icon="icon: instagram; ratio: 0.9" aria-label="Instagram"></a></div>
-						<div><a href="#" class="uk-icon-link" uk-icon="icon: facebook; ratio: 0.9" aria-label="Facebook"></a></div>
-						<div><a href="#" class="uk-icon-link" uk-icon="icon: twitter; ratio: 0.9" aria-label="Twitter"></a></div>
+						<div><a href="#" data-editable="youtube-link" class="uk-icon-link" uk-icon="icon: youtube; ratio: 0.9" aria-label="YouTube"></a></div>
+						<div><a href="#" data-editable="instagram-link" class="uk-icon-link" uk-icon="icon: instagram; ratio: 0.9" aria-label="Instagram"></a></div>
+						<div><a href="#" data-editable="facebook-link" class="uk-icon-link" uk-icon="icon: facebook; ratio: 0.9" aria-label="Facebook"></a></div>
+						<div><a href="#" data-editable="twitter-link" class="uk-icon-link" uk-icon="icon: twitter; ratio: 0.9" aria-label="Twitter"></a></div>
 					</div>
 				</div>
 			</div>
@@ -88,18 +88,18 @@
 	<!-- Navbar End -->
 	
 	<!-- Hero with Livestream Start -->
-	<div class="uk-section uk-section-large uk-background-cover uk-background-center-center uk-light uk-background-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1593485589800-579b43749b15?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+	<div class="uk-section uk-section-large uk-background-cover uk-background-center-center uk-light uk-background-blend-overlay" data-editable="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1593485589800-579b43749b15?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
 		<div class="uk-container">
 			<div class="uk-text-center">
 				<span uk-icon="icon: video-camera; ratio: 3"></span>
-				<h1 class="uk-heading-large">Weekly Worship Livestream</h1>
-				<p class="uk-text-lead">Join Thousands of Believers Worldwide Every Sunday</p>
+				<h1 class="uk-heading-large" data-editable="hero-heading">Weekly Worship Livestream</h1>
+				<p class="uk-text-lead" data-editable="hero-tagline">Join Thousands of Believers Worldwide Every Sunday</p>
 			</div>
 			
 			<div class="uk-width-4-5@m uk-margin-auto uk-margin-medium-top">
 				<div class="uk-card uk-card-default">
 					<div class="uk-card-media-top">
-						<iframe 
+						<iframe data-editable="livestream-embed"
 							width="100%" 
 							height="550" 
 							src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOZRt35BMbHCgeYwMhQ_83pKnLCtfHM8J" 
@@ -112,15 +112,15 @@
 						<div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
 							<div>
 								<span uk-icon="icon: calendar"></span>
-								<span class="uk-text-bold">Every Sunday</span>
+								<span class="uk-text-bold" data-editable="service-day">Every Sunday</span>
 							</div>
 							<div>
 								<span uk-icon="icon: clock"></span>
-								<span class="uk-text-bold">11:00 AM (GMT+3)</span>
+								<span class="uk-text-bold" data-editable="service-time">11:00 AM (GMT+3)</span>
 							</div>
 							<div>
 								<span uk-icon="icon: location"></span>
-								<span class="uk-text-bold">Kericho, Kenya</span>
+								<span class="uk-text-bold" data-editable="service-location">Kericho, Kenya</span>
 							</div>
 						</div>
 					</div>
@@ -134,7 +134,7 @@
 	<section class="uk-section">
 		<div class="uk-container">
 			<div class="uk-text-center uk-margin-medium-bottom">
-				<h2 class="uk-heading-medium">What to Expect</h2>
+				<h2 class="uk-heading-medium" data-editable="expect-heading">What to Expect</h2>
 			</div>
 			
 			<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
@@ -177,8 +177,8 @@
 	<section class="uk-section uk-section-muted">
 		<div class="uk-container">
 			<div class="uk-text-center uk-margin-medium-bottom">
-				<h2 class="uk-heading-medium">Service Times Across Time Zones</h2>
-				<p class="uk-text-lead">Every Sunday at 11:00 AM East Africa Time (GMT+3)</p>
+				<h2 class="uk-heading-medium" data-editable="timezone-heading">Service Times Across Time Zones</h2>
+				<p class="uk-text-lead" data-editable="timezone-tagline">Every Sunday at 11:00 AM East Africa Time (GMT+3)</p>
 			</div>
 			
 			<div class="uk-width-3-4@m uk-margin-auto">
@@ -187,58 +187,58 @@
 						<tr>
 							<td>
 								<span class="country-flag ke">KE</span>
-								<span class="uk-margin-small-left">Kenya (Nairobi)</span>
+								<span class="uk-margin-small-left" data-editable="tz-kenya-city">Kenya (Nairobi)</span>
 							</td>
-							<td><strong>11:00 AM</strong></td>
+							<td><strong data-editable="tz-kenya-time">11:00 AM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag gb">GB</span>
-								<span class="uk-margin-small-left">United Kingdom (London)</span>
+								<span class="uk-margin-small-left" data-editable="tz-uk-city">United Kingdom (London)</span>
 							</td>
-							<td><strong>8:00 AM</strong></td>
+							<td><strong data-editable="tz-uk-time">8:00 AM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag us">US</span>
-								<span class="uk-margin-small-left">USA (New York)</span>
+								<span class="uk-margin-small-left" data-editable="tz-useast-city">USA (New York)</span>
 							</td>
-							<td><strong>3:00 AM</strong></td>
+							<td><strong data-editable="tz-useast-time">3:00 AM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag us">US</span>
-								<span class="uk-margin-small-left">USA (Los Angeles)</span>
+								<span class="uk-margin-small-left" data-editable="tz-uswest-city">USA (Los Angeles)</span>
 							</td>
-							<td><strong>12:00 AM</strong></td>
+							<td><strong data-editable="tz-uswest-time">12:00 AM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag au">AU</span>
-								<span class="uk-margin-small-left">Australia (Sydney)</span>
+								<span class="uk-margin-small-left" data-editable="tz-australia-city">Australia (Sydney)</span>
 							</td>
-							<td><strong>7:00 PM</strong></td>
+							<td><strong data-editable="tz-australia-time">7:00 PM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag in">IN</span>
-								<span class="uk-margin-small-left">India (Mumbai)</span>
+								<span class="uk-margin-small-left" data-editable="tz-india-city">India (Mumbai)</span>
 							</td>
-							<td><strong>1:30 PM</strong></td>
+							<td><strong data-editable="tz-india-time">1:30 PM</strong></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="country-flag za">ZA</span>
-								<span class="uk-margin-small-left">South Africa (Johannesburg)</span>
+								<span class="uk-margin-small-left" data-editable="tz-sa-city">South Africa (Johannesburg)</span>
 							</td>
-							<td><strong>10:00 AM</strong></td>
+							<td><strong data-editable="tz-sa-time">10:00 AM</strong></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			
 			<div class="uk-margin-medium-top uk-text-center">
-				<a class="uk-button uk-button-primary uk-button-large" href="#" uk-icon="icon: youtube">Visit Our YouTube Channel</a>
+				<a class="uk-button uk-button-primary uk-button-large" href="#" data-editable="youtube-channel-link" uk-icon="icon: youtube">Visit Our YouTube Channel</a>
 			</div>
 		</div>
 	</section>
@@ -255,15 +255,15 @@
 						<img src="/assets/img/FHC-logo.png" alt="FHC Logo" style="max-height: 50px;" class="uk-margin-small-bottom">
 					</div>
 					<p class="uk-text-large uk-text-bold">Faith Heaven Church Kenya</p>
-					<p>A Church Without Walls with 200+ branches across Kenya. Join us every Sunday for worship, or tune into Just FM 98.9 for 24/7 Gospel content.</p>
+					<p data-editable="footer-description">A Church Without Walls with 200+ branches across Kenya. Join us every Sunday for worship, or tune into Just FM 98.9 for 24/7 Gospel content.</p>
 					
 					<div class="uk-margin-medium-top">
 						<h4 class="uk-text-uppercase uk-text-bold" style="letter-spacing: 1px; font-size: 0.875rem;">Connect With Us</h4>
 						<div class="uk-grid-small uk-child-width-auto" uk-grid>
-							<div><a href="#" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1.2" aria-label="YouTube" style="width: 42px; height: 42px;"></a></div>
-							<div><a href="#" class="uk-icon-button" uk-icon="icon: instagram; ratio: 1.2" aria-label="Instagram" style="width: 42px; height: 42px;"></a></div>
-							<div><a href="#" class="uk-icon-button" uk-icon="icon: facebook; ratio: 1.2" aria-label="Facebook" style="width: 42px; height: 42px;"></a></div>
-							<div><a href="#" class="uk-icon-button" uk-icon="icon: twitter; ratio: 1.2" aria-label="Twitter" style="width: 42px; height: 42px;"></a></div>
+							<div><a href="#" data-editable="footer-youtube-link" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1.2" aria-label="YouTube" style="width: 42px; height: 42px;"></a></div>
+							<div><a href="#" data-editable="footer-instagram-link" class="uk-icon-button" uk-icon="icon: instagram; ratio: 1.2" aria-label="Instagram" style="width: 42px; height: 42px;"></a></div>
+							<div><a href="#" data-editable="footer-facebook-link" class="uk-icon-button" uk-icon="icon: facebook; ratio: 1.2" aria-label="Facebook" style="width: 42px; height: 42px;"></a></div>
+							<div><a href="#" data-editable="footer-twitter-link" class="uk-icon-button" uk-icon="icon: twitter; ratio: 1.2" aria-label="Twitter" style="width: 42px; height: 42px;"></a></div>
 						</div>
 					</div>
 				</div>
@@ -291,7 +291,7 @@
 											<span uk-icon="icon: location"></span>
 										</div>
 										<div class="uk-width-expand">
-											<span>Nenyon Building 1st Floor<br>P.O. Box 479 - 20200, Kericho</span>
+											<span data-editable="footer-address">Nenyon Building 1st Floor<br>P.O. Box 479 - 20200, Kericho</span>
 										</div>
 									</div>
 								</li>
@@ -301,7 +301,7 @@
 											<span uk-icon="icon: receiver"></span>
 										</div>
 										<div class="uk-width-expand">
-											<a href="tel:0700105721">0700105721</a> / <a href="tel:0799214158">0799214158</a>
+											<a href="tel:0700105721" data-editable="footer-phone1">0700105721</a> / <a href="tel:0799214158" data-editable="footer-phone2">0799214158</a>
 										</div>
 									</div>
 								</li>
@@ -311,7 +311,7 @@
 											<span uk-icon="icon: mail"></span>
 										</div>
 										<div class="uk-width-expand">
-											<a href="mailto:faithministriesandchurches@gmail.com" style="word-break: break-all;">faithministriesandchurches@gmail.com</a>
+											<a href="mailto:faithministriesandchurches@gmail.com" data-editable="footer-email" style="word-break: break-all;">faithministriesandchurches@gmail.com</a>
 										</div>
 									</div>
 								</li>
@@ -321,7 +321,7 @@
 											<span uk-icon="icon: world"></span>
 										</div>
 										<div class="uk-width-expand">
-											<a href="https://faithheavenchurchkenya.org">faithheavenchurchkenya.org</a>
+											<a href="https://faithheavenchurchkenya.org" data-editable="footer-website">faithheavenchurchkenya.org</a>
 										</div>
 									</div>
 								</li>
@@ -341,8 +341,8 @@
 									<span uk-icon="icon: mail; ratio: 2" style="color: white;"></span>
 								</div>
 								<div class="uk-width-expand">
-									<h3 class="uk-margin-remove" style="color: white;">Stay Blessed & Informed</h3>
-									<p class="uk-margin-remove-top uk-text-small" style="color: rgba(255,255,255,0.9);">Get weekly sermons, event updates, and prayer points delivered to your inbox.</p>
+									<h3 class="uk-margin-remove" style="color: white;" data-editable="newsletter-heading">Stay Blessed & Informed</h3>
+									<p class="uk-margin-remove-top uk-text-small" style="color: rgba(255,255,255,0.9);" data-editable="newsletter-description">Get weekly sermons, event updates, and prayer points delivered to your inbox.</p>
 								</div>
 							</div>
 						</div>
@@ -380,5 +380,6 @@
 	<!-- Footer End -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
+	<script src="/assets/js/scripts.js"></script>
   </body>
 </html>
