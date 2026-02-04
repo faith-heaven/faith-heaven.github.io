@@ -1,27 +1,28 @@
 content:
-  - name: home
-    label: Homepage
+  # Site-wide Settings (edit once, applies to all pages)
+  - name: site_settings
+    label: Site Settings (Shared Across All Pages)
     type: file
-    path: content/home.json
+    path: content/site-settings.json
     fields:
       # Top Bar
       - name: phone1
-        label: Phone Number 1
+        label: Phone Number 1 (Top Bar)
         type: string
       - name: phone2
-        label: Phone Number 2
+        label: Phone Number 2 (Top Bar)
         type: string
       - name: email
-        label: Email Address
+        label: Email Address (Top Bar)
         type: string
       - name: email_display
         label: Email Display Text
         type: string
       - name: tagline
-        label: Church Tagline (Mobile)
+        label: Church Tagline (Mobile Top Bar)
         type: string
       
-      # Social Links
+      # Social Links (Top Bar & Footer)
       - name: youtube_link
         label: YouTube Link
         type: string
@@ -35,6 +36,40 @@ content:
         label: Twitter Link
         type: string
       
+      # Footer
+      - name: footer_description
+        label: Footer Description
+        type: text
+      - name: footer_address
+        label: Footer Address
+        type: text
+      - name: footer_phone1
+        label: Footer Phone 1
+        type: string
+      - name: footer_phone2
+        label: Footer Phone 2
+        type: string
+      - name: footer_email
+        label: Footer Email
+        type: string
+      - name: footer_website
+        label: Footer Website
+        type: string
+      
+      # Newsletter Section
+      - name: newsletter_heading
+        label: Newsletter Heading
+        type: string
+      - name: newsletter_description
+        label: Newsletter Description
+        type: text
+
+  # Homepage
+  - name: home
+    label: Homepage
+    type: file
+    path: content/home.json
+    fields:
       # Hero Section
       - name: hero_bg_image
         label: Hero Background Image URL
@@ -174,83 +209,13 @@ content:
       - name: events_tagline
         label: Events Tagline
         type: string
-      
-      # Footer
-      - name: footer_description
-        label: Footer Description
-        type: text
-      - name: footer_youtube_link
-        label: Footer YouTube Link
-        type: string
-      - name: footer_instagram_link
-        label: Footer Instagram Link
-        type: string
-      - name: footer_facebook_link
-        label: Footer Facebook Link
-        type: string
-      - name: footer_twitter_link
-        label: Footer Twitter Link
-        type: string
-      - name: footer_address
-        label: Footer Address
-        type: text
-      - name: footer_phone1
-        label: Footer Phone 1
-        type: string
-      - name: footer_phone2
-        label: Footer Phone 2
-        type: string
-      - name: footer_email
-        label: Footer Email
-        type: string
-      - name: footer_website
-        label: Footer Website
-        type: string
-      
-      # Newsletter Section
-      - name: newsletter_heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter_description
-        label: Newsletter Description
-        type: text
 
+  # Contact Page
   - name: contact
     label: Contact Page
     type: file
     path: content/contact.json
     fields:
-      # Top Bar (shared)
-      - name: phone1
-        label: Phone Number 1
-        type: string
-      - name: phone2
-        label: Phone Number 2
-        type: string
-      - name: email
-        label: Email Address
-        type: string
-      - name: email_display
-        label: Email Display Text
-        type: string
-      - name: tagline
-        label: Church Tagline (Mobile)
-        type: string
-      
-      # Social Links (shared)
-      - name: youtube_link
-        label: YouTube Link
-        type: string
-      - name: instagram_link
-        label: Instagram Link
-        type: string
-      - name: facebook_link
-        label: Facebook Link
-        type: string
-      - name: twitter_link
-        label: Twitter Link
-        type: string
-      
       # Hero Section
       - name: hero_bg_image
         label: Hero Background Image URL
@@ -379,81 +344,13 @@ content:
       - name: branches_footer_text
         label: Branches Footer Text
         type: string
-      
-      # Footer (shared)
-      - name: footer_description
-        label: Footer Description
-        type: text
-      - name: footer_youtube_link
-        label: Footer YouTube Link
-        type: string
-      - name: footer_instagram_link
-        label: Footer Instagram Link
-        type: string
-      - name: footer_facebook_link
-        label: Footer Facebook Link
-        type: string
-      - name: footer_twitter_link
-        label: Footer Twitter Link
-        type: string
-      - name: footer_address
-        label: Footer Address
-        type: text
-      - name: footer_phone1
-        label: Footer Phone 1
-        type: string
-      - name: footer_phone2
-        label: Footer Phone 2
-        type: string
-      - name: footer_email
-        label: Footer Email
-        type: string
-      - name: footer_website
-        label: Footer Website
-        type: string
-      
-      # Newsletter Section (shared)
-      - name: newsletter_heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter_description
-        label: Newsletter Description
-        type: text
 
+  # Radio Page
   - name: radio
     label: Radio Page
     type: file
     path: content/radio.json
     fields:
-      # Top Bar (shared)
-      - name: phone1
-        label: Phone Number 1
-        type: string
-      - name: phone2
-        label: Phone Number 2
-        type: string
-      - name: email
-        label: Email Address
-        type: string
-      - name: email_display
-        label: Email Display Text
-        type: string
-      - name: tagline
-        label: Church Tagline (Mobile)
-        type: string
-      - name: youtube_link
-        label: YouTube Link
-        type: string
-      - name: instagram_link
-        label: Instagram Link
-        type: string
-      - name: facebook_link
-        label: Facebook Link
-        type: string
-      - name: twitter_link
-        label: Twitter Link
-        type: string
-      
       # Hero Section
       - name: hero_bg_image
         label: Hero Background Image URL
@@ -489,79 +386,13 @@ content:
       - name: studio_phone2
         label: Studio Phone 2
         type: string
-      
-      # Footer (shared)
-      - name: footer_description
-        label: Footer Description
-        type: text
-      - name: footer_youtube_link
-        label: Footer YouTube Link
-        type: string
-      - name: footer_instagram_link
-        label: Footer Instagram Link
-        type: string
-      - name: footer_facebook_link
-        label: Footer Facebook Link
-        type: string
-      - name: footer_twitter_link
-        label: Footer Twitter Link
-        type: string
-      - name: footer_address
-        label: Footer Address
-        type: text
-      - name: footer_phone1
-        label: Footer Phone 1
-        type: string
-      - name: footer_phone2
-        label: Footer Phone 2
-        type: string
-      - name: footer_email
-        label: Footer Email
-        type: string
-      - name: footer_website
-        label: Footer Website
-        type: string
-      - name: newsletter_heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter_description
-        label: Newsletter Description
-        type: text
 
+  # Media Page
   - name: media
     label: Media Page
     type: file
     path: content/media.json
     fields:
-      # Top Bar (shared)
-      - name: phone1
-        label: Phone Number 1
-        type: string
-      - name: phone2
-        label: Phone Number 2
-        type: string
-      - name: email
-        label: Email Address
-        type: string
-      - name: email_display
-        label: Email Display Text
-        type: string
-      - name: tagline
-        label: Church Tagline (Mobile)
-        type: string
-      - name: youtube_link
-        label: YouTube Link
-        type: string
-      - name: instagram_link
-        label: Instagram Link
-        type: string
-      - name: facebook_link
-        label: Facebook Link
-        type: string
-      - name: twitter_link
-        label: Twitter Link
-        type: string
-      
       # Hero Section
       - name: hero_bg_image
         label: Hero Background Image URL
@@ -656,79 +487,13 @@ content:
       - name: cta_text
         label: CTA Text
         type: text
-      
-      # Footer (shared)
-      - name: footer_description
-        label: Footer Description
-        type: text
-      - name: footer_youtube_link
-        label: Footer YouTube Link
-        type: string
-      - name: footer_instagram_link
-        label: Footer Instagram Link
-        type: string
-      - name: footer_facebook_link
-        label: Footer Facebook Link
-        type: string
-      - name: footer_twitter_link
-        label: Footer Twitter Link
-        type: string
-      - name: footer_address
-        label: Footer Address
-        type: text
-      - name: footer_phone1
-        label: Footer Phone 1
-        type: string
-      - name: footer_phone2
-        label: Footer Phone 2
-        type: string
-      - name: footer_email
-        label: Footer Email
-        type: string
-      - name: footer_website
-        label: Footer Website
-        type: string
-      - name: newsletter_heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter_description
-        label: Newsletter Description
-        type: text
 
+  # Livestream Page
   - name: livestream
     label: Livestream Page
     type: file
     path: content/livestream.json
     fields:
-      # Top Bar (shared)
-      - name: phone1
-        label: Phone Number 1
-        type: string
-      - name: phone2
-        label: Phone Number 2
-        type: string
-      - name: email
-        label: Email Address
-        type: string
-      - name: email_display
-        label: Email Display Text
-        type: string
-      - name: tagline
-        label: Church Tagline (Mobile)
-        type: string
-      - name: youtube_link
-        label: YouTube Link
-        type: string
-      - name: instagram_link
-        label: Instagram Link
-        type: string
-      - name: facebook_link
-        label: Facebook Link
-        type: string
-      - name: twitter_link
-        label: Twitter Link
-        type: string
-      
       # Hero Section
       - name: hero_bg_image
         label: Hero Background Image URL
@@ -809,41 +574,3 @@ content:
       - name: youtube_channel_link
         label: YouTube Channel Link
         type: string
-      
-      # Footer (shared)
-      - name: footer_description
-        label: Footer Description
-        type: text
-      - name: footer_youtube_link
-        label: Footer YouTube Link
-        type: string
-      - name: footer_instagram_link
-        label: Footer Instagram Link
-        type: string
-      - name: footer_facebook_link
-        label: Footer Facebook Link
-        type: string
-      - name: footer_twitter_link
-        label: Footer Twitter Link
-        type: string
-      - name: footer_address
-        label: Footer Address
-        type: text
-      - name: footer_phone1
-        label: Footer Phone 1
-        type: string
-      - name: footer_phone2
-        label: Footer Phone 2
-        type: string
-      - name: footer_email
-        label: Footer Email
-        type: string
-      - name: footer_website
-        label: Footer Website
-        type: string
-      - name: newsletter_heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter_description
-        label: Newsletter Description
-        type: text
