@@ -1,66 +1,66 @@
 content:
   # Site-wide Settings (edit once, applies to all pages)
-  - name: site_settings
+  - name: site-settings
     label: Site Settings (Shared Across All Pages)
     type: file
     path: content/site-settings.json
     fields:
       # Top Bar
-      - name: phone1
+      - name: phone-1
         label: Phone Number 1 (Top Bar)
         type: string
-      - name: phone2
+      - name: phone-2
         label: Phone Number 2 (Top Bar)
         type: string
       - name: email
         label: Email Address (Top Bar)
         type: string
-      - name: email_display
+      - name: email-display
         label: Email Display Text
         type: string
       - name: tagline
         label: Church Tagline (Mobile Top Bar)
         type: string
-      
+
       # Social Links (Top Bar & Footer)
-      - name: youtube_link
+      - name: youtube-link
         label: YouTube Link
         type: string
-      - name: instagram_link
+      - name: instagram-link
         label: Instagram Link
         type: string
-      - name: facebook_link
+      - name: facebook-link
         label: Facebook Link
         type: string
-      - name: twitter_link
+      - name: twitter-link
         label: Twitter Link
         type: string
-      
+
       # Footer
-      - name: footer_description
+      - name: footer-description
         label: Footer Description
         type: text
-      - name: footer_address
+      - name: footer-address
         label: Footer Address
         type: text
-      - name: footer_phone1
+      - name: footer-phone-1
         label: Footer Phone 1
         type: string
-      - name: footer_phone2
+      - name: footer-phone-2
         label: Footer Phone 2
         type: string
-      - name: footer_email
+      - name: footer-email
         label: Footer Email
         type: string
-      - name: footer_website
+      - name: footer-website
         label: Footer Website
         type: string
-      
+
       # Newsletter Section
-      - name: newsletter_heading
+      - name: newsletter-heading
         label: Newsletter Heading
         type: string
-      - name: newsletter_description
+      - name: newsletter-description
         label: Newsletter Description
         type: text
 
@@ -71,506 +71,133 @@ content:
     path: content/home.json
     fields:
       # Hero Section
-      - name: hero_bg_image
+      - name: hero-bg-image
         label: Hero Background Image URL
         type: string
-      - name: hero_heading
+      - name: hero-heading
         label: Hero Heading
         type: string
-      - name: hero_tagline
+      - name: hero-tagline
         label: Hero Tagline
         type: string
-      - name: hero_description
+      - name: hero-description
         label: Hero Description
         type: text
-      
+
       # Mission & Vision
-      - name: mission_image
+      - name: mission-image
         label: Mission Section Image URL
         type: string
-      - name: mission_heading
+      - name: mission-heading
         label: Mission Heading
         type: string
-      - name: mission_text
+      - name: mission-text
         label: Mission Statement
         type: text
-      - name: vision_heading
+      - name: vision-heading
         label: Vision Heading
         type: string
-      - name: vision_text
+      - name: vision-text
         label: Vision Statement
         type: text
-      - name: branches_count
+      - name: branches-count
         label: Branch Count Text
         type: string
-      
+
       # Ministries Section
-      - name: ministries_heading
+      - name: ministries-heading
         label: Ministries Section Heading
         type: string
-      - name: ministries_tagline
+      - name: ministries-tagline
         label: Ministries Tagline
         type: string
-      
+
       # Leadership Section
-      - name: leadership_heading
+      - name: leadership-heading
         label: Leadership Section Heading
         type: string
-      - name: leadership_tagline
+      - name: leadership-tagline
         label: Leadership Tagline
         type: string
-      
+
       # Bishop 1
-      - name: bishop1_photo
+      - name: bishop-1-photo
         label: Bishop 1 Photo URL
         type: string
-      - name: bishop1_name
+      - name: bishop-1-name
         label: Bishop 1 Name
         type: string
-      - name: bishop1_title
+      - name: bishop-1-title
         label: Bishop 1 Title
         type: string
-      - name: bishop1_bio
+      - name: bishop-1-bio
         label: Bishop 1 Bio
         type: text
-      
+
       # Bishop 2
-      - name: bishop2_photo
+      - name: bishop-2-photo
         label: Bishop 2 Photo URL
         type: string
-      - name: bishop2_name
+      - name: bishop-2-name
         label: Bishop 2 Name
         type: string
-      - name: bishop2_title
+      - name: bishop-2-title
         label: Bishop 2 Title
         type: string
-      - name: bishop2_bio
+      - name: bishop-2-bio
         label: Bishop 2 Bio
         type: text
-      
+
       # Scripture Verses
-      - name: verse1_text
+      - name: verse-1-text
         label: Scripture Verse 1 Text
         type: text
-      - name: verse1_ref
+      - name: verse-1-ref
         label: Scripture Verse 1 Reference
         type: string
-      - name: verse2_text
+      - name: verse-2-text
         label: Scripture Verse 2 Text
         type: text
-      - name: verse2_ref
+      - name: verse-2-ref
         label: Scripture Verse 2 Reference
         type: string
-      
+
       # Giving Section
-      - name: giving_heading
+      - name: giving-heading
         label: Giving Section Heading
         type: string
-      - name: giving_verse
+      - name: giving-verse
         label: Giving Scripture Verse
         type: text
-      - name: mpesa_women_paybill
+      - name: mpesa-women-paybill
         label: Women's Ministry Paybill
         type: string
-      - name: mpesa_women_account
+      - name: mpesa-women-account
         label: Women's Ministry Account
         type: string
-      - name: mpesa_radio_paybill
+      - name: mpesa-radio-paybill
         label: Radio Ministry Paybill
         type: string
-      - name: mpesa_radio_account
+      - name: mpesa-radio-account
         label: Radio Ministry Account
         type: string
-      - name: mpesa_church_paybill
+      - name: mpesa-church-paybill
         label: Church Offering Paybill
         type: string
-      - name: mpesa_church_account
+      - name: mpesa-church-account
         label: Church Offering Account
         type: string
-      
+
       # Global Reach Section
-      - name: global_heading
+      - name: global-heading
         label: Global Section Heading
         type: string
-      - name: global_tagline
+      - name: global-tagline
         label: Global Section Tagline
         type: string
-      - name: stat_branches
+      - name: stat-branches
         label: Number of Branches
         type: string
-      - name: stat_countries
+      - name: stat-countries
         label: Number of Countries
-        type: string
-      
-      # Events Section
-      - name: events_heading
-        label: Events Heading
-        type: string
-      - name: events_tagline
-        label: Events Tagline
-        type: string
-
-  # Contact Page
-  - name: contact
-    label: Contact Page
-    type: file
-    path: content/contact.json
-    fields:
-      # Hero Section
-      - name: hero_bg_image
-        label: Hero Background Image URL
-        type: string
-      - name: hero_heading
-        label: Hero Heading
-        type: string
-      - name: hero_description
-        label: Hero Description
-        type: text
-      
-      # Contact Info Cards
-      - name: card_address
-        label: Address Card Text
-        type: text
-      - name: card_phone1
-        label: Card Phone 1
-        type: string
-      - name: card_phone2
-        label: Card Phone 2
-        type: string
-      - name: card_email
-        label: Card Email
-        type: string
-      - name: card_website
-        label: Card Website
-        type: string
-      
-      # Contact Form Section
-      - name: form_heading
-        label: Form Section Heading
-        type: string
-      - name: form_description
-        label: Form Description
-        type: text
-      - name: form_note
-        label: Form Footer Note
-        type: text
-      
-      # Map Section
-      - name: map_embed
-        label: Google Maps Embed URL
-        type: string
-      - name: map_title
-        label: Map Card Title
-        type: string
-      - name: map_address
-        label: Map Address Line
-        type: string
-      - name: map_pobox
-        label: Map P.O. Box
-        type: string
-      - name: map_phones
-        label: Map Phone Numbers
-        type: string
-      - name: map_email
-        label: Map Email
-        type: string
-      - name: branches_cta_heading
-        label: Branches CTA Heading
-        type: string
-      - name: branches_cta_text
-        label: Branches CTA Text
-        type: text
-      
-      # Featured Branches Section
-      - name: branches_heading
-        label: Branches Section Heading
-        type: string
-      - name: branches_tagline
-        label: Branches Tagline
-        type: string
-      
-      # Branch 1
-      - name: branch1_label
-        label: Branch 1 Label
-        type: string
-      - name: branch1_name
-        label: Branch 1 Name
-        type: string
-      - name: branch1_location
-        label: Branch 1 Location
-        type: string
-      - name: branch1_phone
-        label: Branch 1 Phone
-        type: string
-      - name: branch1_times
-        label: Branch 1 Service Times
-        type: string
-      
-      # Branch 2
-      - name: branch2_label
-        label: Branch 2 Label
-        type: string
-      - name: branch2_name
-        label: Branch 2 Name
-        type: string
-      - name: branch2_location
-        label: Branch 2 Location
-        type: string
-      - name: branch2_phone
-        label: Branch 2 Phone
-        type: string
-      - name: branch2_times
-        label: Branch 2 Service Times
-        type: string
-      
-      # Branch 3
-      - name: branch3_label
-        label: Branch 3 Label
-        type: string
-      - name: branch3_name
-        label: Branch 3 Name
-        type: string
-      - name: branch3_location
-        label: Branch 3 Location
-        type: string
-      - name: branch3_phone
-        label: Branch 3 Phone
-        type: string
-      - name: branch3_times
-        label: Branch 3 Service Times
-        type: string
-      
-      # Branches Footer
-      - name: branches_footer_text
-        label: Branches Footer Text
-        type: string
-
-  # Radio Page
-  - name: radio
-    label: Radio Page
-    type: file
-    path: content/radio.json
-    fields:
-      # Hero Section
-      - name: hero_bg_image
-        label: Hero Background Image URL
-        type: string
-      - name: hero_heading
-        label: Hero Heading
-        type: string
-      - name: hero_tagline
-        label: Hero Tagline
-        type: string
-      - name: radio_player_embed
-        label: Radio Player Embed URL
-        type: string
-      
-      # Programming Section
-      - name: programming_heading
-        label: Programming Section Heading
-        type: string
-      
-      # How to Listen Section
-      - name: listen_heading
-        label: How to Listen Heading
-        type: string
-      - name: fm_frequency
-        label: FM Frequency
-        type: string
-      - name: mobile_app_info
-        label: Mobile App Information
-        type: text
-      - name: studio_phone1
-        label: Studio Phone 1
-        type: string
-      - name: studio_phone2
-        label: Studio Phone 2
-        type: string
-
-  # Media Page
-  - name: media
-    label: Media Page
-    type: file
-    path: content/media.json
-    fields:
-      # Hero Section
-      - name: hero_bg_image
-        label: Hero Background Image URL
-        type: string
-      - name: hero_heading
-        label: Hero Heading
-        type: string
-      - name: hero_tagline
-        label: Hero Tagline
-        type: string
-      
-      # Gallery Categories (8 galleries)
-      - name: gallery1_image
-        label: Gallery 1 Image URL
-        type: string
-      - name: gallery1_title
-        label: Gallery 1 Title
-        type: string
-      - name: gallery2_image
-        label: Gallery 2 Image URL
-        type: string
-      - name: gallery2_title
-        label: Gallery 2 Title
-        type: string
-      - name: gallery3_image
-        label: Gallery 3 Image URL
-        type: string
-      - name: gallery3_title
-        label: Gallery 3 Title
-        type: string
-      - name: gallery4_image
-        label: Gallery 4 Image URL
-        type: string
-      - name: gallery4_title
-        label: Gallery 4 Title
-        type: string
-      - name: gallery5_image
-        label: Gallery 5 Image URL
-        type: string
-      - name: gallery5_title
-        label: Gallery 5 Title
-        type: string
-      - name: gallery6_image
-        label: Gallery 6 Image URL
-        type: string
-      - name: gallery6_title
-        label: Gallery 6 Title
-        type: string
-      - name: gallery7_image
-        label: Gallery 7 Image URL
-        type: string
-      - name: gallery7_title
-        label: Gallery 7 Title
-        type: string
-      - name: gallery8_image
-        label: Gallery 8 Image URL
-        type: string
-      - name: gallery8_title
-        label: Gallery 8 Title
-        type: string
-      
-      # Video Section
-      - name: videos_heading
-        label: Videos Section Heading
-        type: string
-      - name: video1_embed
-        label: Video 1 Embed URL
-        type: string
-      - name: video1_title
-        label: Video 1 Title
-        type: string
-      - name: video2_embed
-        label: Video 2 Embed URL
-        type: string
-      - name: video2_title
-        label: Video 2 Title
-        type: string
-      - name: video3_embed
-        label: Video 3 Embed URL
-        type: string
-      - name: video3_title
-        label: Video 3 Title
-        type: string
-      - name: youtube_channel_link
-        label: YouTube Channel Link
-        type: string
-      
-      # CTA Section
-      - name: cta_heading
-        label: CTA Heading
-        type: string
-      - name: cta_text
-        label: CTA Text
-        type: text
-
-  # Livestream Page
-  - name: livestream
-    label: Livestream Page
-    type: file
-    path: content/livestream.json
-    fields:
-      # Hero Section
-      - name: hero_bg_image
-        label: Hero Background Image URL
-        type: string
-      - name: hero_heading
-        label: Hero Heading
-        type: string
-      - name: hero_tagline
-        label: Hero Tagline
-        type: string
-      - name: livestream_embed
-        label: Livestream Embed URL
-        type: string
-      - name: service_day
-        label: Service Day
-        type: string
-      - name: service_time
-        label: Service Time
-        type: string
-      - name: service_location
-        label: Service Location
-        type: string
-      
-      # What to Expect Section
-      - name: expect_heading
-        label: What to Expect Heading
-        type: string
-      
-      # Time Zones Section
-      - name: timezone_heading
-        label: Time Zones Heading
-        type: string
-      - name: timezone_tagline
-        label: Time Zones Tagline
-        type: string
-      - name: tz_kenya_city
-        label: Kenya City
-        type: string
-      - name: tz_kenya_time
-        label: Kenya Time
-        type: string
-      - name: tz_uk_city
-        label: UK City
-        type: string
-      - name: tz_uk_time
-        label: UK Time
-        type: string
-      - name: tz_useast_city
-        label: US East City
-        type: string
-      - name: tz_useast_time
-        label: US East Time
-        type: string
-      - name: tz_uswest_city
-        label: US West City
-        type: string
-      - name: tz_uswest_time
-        label: US West Time
-        type: string
-      - name: tz_australia_city
-        label: Australia City
-        type: string
-      - name: tz_australia_time
-        label: Australia Time
-        type: string
-      - name: tz_india_city
-        label: India City
-        type: string
-      - name: tz_india_time
-        label: India Time
-        type: string
-      - name: tz_sa_city
-        label: South Africa City
-        type: string
-      - name: tz_sa_time
-        label: South Africa Time
-        type: string
-      - name: youtube_channel_link
-        label: YouTube Channel Link
         type: string
