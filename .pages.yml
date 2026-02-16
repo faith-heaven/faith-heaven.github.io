@@ -1,203 +1,226 @@
+media:
+  input: assets/img/uploads
+  output: /assets/img/uploads
+
 content:
-  # Site-wide Settings (edit once, applies to all pages)
   - name: site-settings
-    label: Site Settings (Shared Across All Pages)
+    label: Site Settings
     type: file
     path: content/site-settings.json
     fields:
-      # Top Bar
-      - name: phone-1
-        label: Phone Number 1 (Top Bar)
-        type: string
-      - name: phone-2
-        label: Phone Number 2 (Top Bar)
-        type: string
-      - name: email
-        label: Email Address (Top Bar)
-        type: string
-      - name: email-display
-        label: Email Display Text
-        type: string
-      - name: tagline
-        label: Church Tagline (Mobile Top Bar)
-        type: string
+      - { name: phone1, label: Top Bar Phone 1, type: string }
+      - { name: phone2, label: Top Bar Phone 2, type: string }
+      - { name: email, label: Top Bar Email, type: string }
+      - { name: email-display, label: Top Bar Email Display, type: string }
+      - { name: tagline, label: Mobile Tagline, type: string }
 
-      # Social Links (Top Bar & Footer)
-      - name: youtube-link
-        label: YouTube Link
-        type: string
-      - name: instagram-link
-        label: Instagram Link
-        type: string
-      - name: facebook-link
-        label: Facebook Link
-        type: string
-      - name: twitter-link
-        label: Twitter Link
-        type: string
+      - { name: youtube-link, label: YouTube Link, type: string }
+      - { name: instagram-link, label: Instagram Link, type: string }
+      - { name: facebook-link, label: Facebook Link, type: string }
+      - { name: twitter-link, label: Twitter Link, type: string }
 
-      # Footer
-      - name: footer-description
-        label: Footer Description
-        type: text
-      - name: footer-address
-        label: Footer Address
-        type: text
-      - name: footer-phone-1
-        label: Footer Phone 1
-        type: string
-      - name: footer-phone-2
-        label: Footer Phone 2
-        type: string
-      - name: footer-email
-        label: Footer Email
-        type: string
-      - name: footer-website
-        label: Footer Website
-        type: string
+      - { name: footer-description, label: Footer Description, type: text }
+      - { name: footer-address, label: Footer Address, type: text }
+      - { name: footer-phone1, label: Footer Phone 1, type: string }
+      - { name: footer-phone2, label: Footer Phone 2, type: string }
+      - { name: footer-email, label: Footer Email, type: string }
+      - { name: footer-website, label: Footer Website, type: string }
+      - { name: footer-youtube-link, label: Footer YouTube Link, type: string }
+      - { name: footer-instagram-link, label: Footer Instagram Link, type: string }
+      - { name: footer-facebook-link, label: Footer Facebook Link, type: string }
+      - { name: footer-twitter-link, label: Footer Twitter Link, type: string }
 
-      # Newsletter Section
-      - name: newsletter-heading
-        label: Newsletter Heading
-        type: string
-      - name: newsletter-description
-        label: Newsletter Description
-        type: text
+      - { name: newsletter-heading, label: Newsletter Heading, type: string }
+      - { name: newsletter-description, label: Newsletter Description, type: text }
 
-  # Homepage
   - name: home
     label: Homepage
     type: file
     path: content/home.json
     fields:
-      # Hero Section
-      - name: hero-bg-image
-        label: Hero Background Image URL
-        type: string
-      - name: hero-heading
-        label: Hero Heading
-        type: string
-      - name: hero-tagline
-        label: Hero Tagline
-        type: string
-      - name: hero-description
-        label: Hero Description
-        type: text
+      - { name: hero-bg-image, label: Hero Background Image, type: image }
+      - { name: hero-heading, label: Hero Heading, type: string }
+      - { name: hero-tagline, label: Hero Tagline, type: string }
+      - { name: hero-description, label: Hero Description, type: text }
 
-      # Mission & Vision
-      - name: mission-image
-        label: Mission Section Image URL
-        type: string
-      - name: mission-heading
-        label: Mission Heading
-        type: string
-      - name: mission-text
-        label: Mission Statement
-        type: text
-      - name: vision-heading
-        label: Vision Heading
-        type: string
-      - name: vision-text
-        label: Vision Statement
-        type: text
-      - name: branches-count
-        label: Branch Count Text
-        type: string
+      - { name: mission-image, label: Mission Image, type: image }
+      - { name: mission-heading, label: Mission Heading, type: string }
+      - { name: mission-text, label: Mission Text, type: text }
+      - { name: vision-heading, label: Vision Heading, type: string }
+      - { name: vision-text, label: Vision Text, type: text }
+      - { name: branches-count, label: Branches Count Text, type: string }
 
-      # Ministries Section
-      - name: ministries-heading
-        label: Ministries Section Heading
-        type: string
-      - name: ministries-tagline
-        label: Ministries Tagline
-        type: string
+      - { name: ministries-heading, label: Ministries Heading, type: string }
+      - { name: ministries-tagline, label: Ministries Tagline, type: string }
+      - { name: events-heading, label: Events Heading, type: string }
+      - { name: events-tagline, label: Events Tagline, type: string }
 
-      # Leadership Section
-      - name: leadership-heading
-        label: Leadership Section Heading
-        type: string
-      - name: leadership-tagline
-        label: Leadership Tagline
-        type: string
+      - { name: leadership-heading, label: Leadership Heading, type: string }
+      - { name: leadership-tagline, label: Leadership Tagline, type: string }
 
-      # Bishop 1
-      - name: bishop-1-photo
-        label: Bishop 1 Photo URL
-        type: string
-      - name: bishop-1-name
-        label: Bishop 1 Name
-        type: string
-      - name: bishop-1-title
-        label: Bishop 1 Title
-        type: string
-      - name: bishop-1-bio
-        label: Bishop 1 Bio
-        type: text
+      - { name: bishop1-photo, label: Bishop 1 Photo, type: image }
+      - { name: bishop1-name, label: Bishop 1 Name, type: string }
+      - { name: bishop1-title, label: Bishop 1 Title, type: string }
+      - { name: bishop1-bio, label: Bishop 1 Bio, type: text }
 
-      # Bishop 2
-      - name: bishop-2-photo
-        label: Bishop 2 Photo URL
-        type: string
-      - name: bishop-2-name
-        label: Bishop 2 Name
-        type: string
-      - name: bishop-2-title
-        label: Bishop 2 Title
-        type: string
-      - name: bishop-2-bio
-        label: Bishop 2 Bio
-        type: text
+      - { name: bishop2-photo, label: Bishop 2 Photo, type: image }
+      - { name: bishop2-name, label: Bishop 2 Name, type: string }
+      - { name: bishop2-title, label: Bishop 2 Title, type: string }
+      - { name: bishop2-bio, label: Bishop 2 Bio, type: text }
 
-      # Scripture Verses
-      - name: verse-1-text
-        label: Scripture Verse 1 Text
-        type: text
-      - name: verse-1-ref
-        label: Scripture Verse 1 Reference
-        type: string
-      - name: verse-2-text
-        label: Scripture Verse 2 Text
-        type: text
-      - name: verse-2-ref
-        label: Scripture Verse 2 Reference
-        type: string
+      - { name: verse1-text, label: Verse 1 Text, type: text }
+      - { name: verse1-ref, label: Verse 1 Reference, type: string }
+      - { name: verse2-text, label: Verse 2 Text, type: text }
+      - { name: verse2-ref, label: Verse 2 Reference, type: string }
 
-      # Giving Section
-      - name: giving-heading
-        label: Giving Section Heading
-        type: string
-      - name: giving-verse
-        label: Giving Scripture Verse
-        type: text
-      - name: mpesa-women-paybill
-        label: Women's Ministry Paybill
-        type: string
-      - name: mpesa-women-account
-        label: Women's Ministry Account
-        type: string
-      - name: mpesa-radio-paybill
-        label: Radio Ministry Paybill
-        type: string
-      - name: mpesa-radio-account
-        label: Radio Ministry Account
-        type: string
-      - name: mpesa-church-paybill
-        label: Church Offering Paybill
-        type: string
-      - name: mpesa-church-account
-        label: Church Offering Account
-        type: string
+      - { name: giving-heading, label: Giving Heading, type: string }
+      - { name: giving-verse, label: Giving Verse, type: text }
+      - { name: mpesa-women-paybill, label: Women Paybill, type: string }
+      - { name: mpesa-women-account, label: Women Account, type: string }
+      - { name: mpesa-radio-paybill, label: Radio Paybill, type: string }
+      - { name: mpesa-radio-account, label: Radio Account, type: string }
+      - { name: mpesa-church-paybill, label: Church Paybill, type: string }
+      - { name: mpesa-church-account, label: Church Account, type: string }
 
-      # Global Reach Section
-      - name: global-heading
-        label: Global Section Heading
-        type: string
-      - name: global-tagline
-        label: Global Section Tagline
-        type: string
-      - name: stat-branches
-        label: Number of Branches
-        type: string
-      - name: stat-countries
-        label: Number of Countries
-        type: string
+      - { name: global-heading, label: Global Reach Heading, type: string }
+      - { name: global-tagline, label: Global Reach Tagline, type: string }
+      - { name: stat-branches, label: Branches Stat, type: string }
+      - { name: stat-countries, label: Countries Stat, type: string }
+
+  - name: contact
+    label: Contact Page
+    type: file
+    path: content/contact.json
+    fields:
+      - { name: hero-bg-image, label: Hero Background Image, type: image }
+      - { name: hero-heading, label: Hero Heading, type: string }
+      - { name: hero-description, label: Hero Description, type: text }
+
+      - { name: card-address, label: Contact Card Address, type: text }
+      - { name: card-phone1, label: Contact Card Phone 1, type: string }
+      - { name: card-phone2, label: Contact Card Phone 2, type: string }
+      - { name: card-email, label: Contact Card Email, type: string }
+      - { name: card-website, label: Contact Card Website, type: string }
+
+      - { name: form-heading, label: Form Heading, type: string }
+      - { name: form-description, label: Form Description, type: text }
+      - { name: form-note, label: Form Note, type: text }
+
+      - { name: map-title, label: Map Section Title, type: string }
+      - { name: map-address, label: Map Address, type: text }
+      - { name: map-pobox, label: Map P.O. Box, type: string }
+      - { name: map-phones, label: Map Phones, type: text }
+      - { name: map-email, label: Map Email, type: string }
+      - { name: map-embed, label: Map Embed HTML, type: text }
+
+      - { name: branches-heading, label: Branches Heading, type: string }
+      - { name: branches-tagline, label: Branches Tagline, type: string }
+      - { name: branch1-label, label: Branch 1 Label, type: string }
+      - { name: branch1-name, label: Branch 1 Name, type: string }
+      - { name: branch1-location, label: Branch 1 Location, type: text }
+      - { name: branch1-times, label: Branch 1 Service Times, type: text }
+      - { name: branch1-phone, label: Branch 1 Phone, type: string }
+      - { name: branch2-label, label: Branch 2 Label, type: string }
+      - { name: branch2-name, label: Branch 2 Name, type: string }
+      - { name: branch2-location, label: Branch 2 Location, type: text }
+      - { name: branch2-times, label: Branch 2 Service Times, type: text }
+      - { name: branch2-phone, label: Branch 2 Phone, type: string }
+      - { name: branch3-label, label: Branch 3 Label, type: string }
+      - { name: branch3-name, label: Branch 3 Name, type: string }
+      - { name: branch3-location, label: Branch 3 Location, type: text }
+      - { name: branch3-times, label: Branch 3 Service Times, type: text }
+      - { name: branch3-phone, label: Branch 3 Phone, type: string }
+
+      - { name: branches-cta-heading, label: Branches CTA Heading, type: string }
+      - { name: branches-cta-text, label: Branches CTA Text, type: text }
+      - { name: branches-footer-text, label: Branches Footer Text, type: text }
+
+  - name: livestream
+    label: Livestream Page
+    type: file
+    path: content/livestream.json
+    fields:
+      - { name: hero-bg-image, label: Hero Background Image, type: image }
+      - { name: hero-heading, label: Hero Heading, type: string }
+      - { name: hero-tagline, label: Hero Tagline, type: string }
+
+      - { name: livestream-embed, label: Livestream Embed HTML, type: text }
+      - { name: expect-heading, label: What to Expect Heading, type: string }
+      - { name: service-day, label: Service Day, type: string }
+      - { name: service-time, label: Service Time, type: string }
+      - { name: service-location, label: Service Location, type: string }
+
+      - { name: timezone-heading, label: Timezone Heading, type: string }
+      - { name: timezone-tagline, label: Timezone Tagline, type: string }
+      - { name: tz-kenya-city, label: Kenya City, type: string }
+      - { name: tz-kenya-time, label: Kenya Time, type: string }
+      - { name: tz-uk-city, label: UK City, type: string }
+      - { name: tz-uk-time, label: UK Time, type: string }
+      - { name: tz-useast-city, label: US East City, type: string }
+      - { name: tz-useast-time, label: US East Time, type: string }
+      - { name: tz-uswest-city, label: US West City, type: string }
+      - { name: tz-uswest-time, label: US West Time, type: string }
+      - { name: tz-sa-city, label: South Africa City, type: string }
+      - { name: tz-sa-time, label: South Africa Time, type: string }
+      - { name: tz-india-city, label: India City, type: string }
+      - { name: tz-india-time, label: India Time, type: string }
+      - { name: tz-australia-city, label: Australia City, type: string }
+      - { name: tz-australia-time, label: Australia Time, type: string }
+
+      - { name: youtube-channel-link, label: YouTube Channel Link, type: string }
+
+  - name: media-page
+    label: Media Page
+    type: file
+    path: content/media.json
+    fields:
+      - { name: hero-bg-image, label: Hero Background Image, type: image }
+      - { name: hero-heading, label: Hero Heading, type: string }
+      - { name: hero-tagline, label: Hero Tagline, type: string }
+
+      - { name: videos-heading, label: Videos Heading, type: string }
+      - { name: video1-title, label: Video 1 Title, type: string }
+      - { name: video1-embed, label: Video 1 Embed HTML, type: text }
+      - { name: video2-title, label: Video 2 Title, type: string }
+      - { name: video2-embed, label: Video 2 Embed HTML, type: text }
+      - { name: video3-title, label: Video 3 Title, type: string }
+      - { name: video3-embed, label: Video 3 Embed HTML, type: text }
+
+      - { name: gallery1-title, label: Gallery Image 1 Title, type: string }
+      - { name: gallery1-image, label: Gallery Image 1, type: image }
+      - { name: gallery2-title, label: Gallery Image 2 Title, type: string }
+      - { name: gallery2-image, label: Gallery Image 2, type: image }
+      - { name: gallery3-title, label: Gallery Image 3 Title, type: string }
+      - { name: gallery3-image, label: Gallery Image 3, type: image }
+      - { name: gallery4-title, label: Gallery Image 4 Title, type: string }
+      - { name: gallery4-image, label: Gallery Image 4, type: image }
+      - { name: gallery5-title, label: Gallery Image 5 Title, type: string }
+      - { name: gallery5-image, label: Gallery Image 5, type: image }
+      - { name: gallery6-title, label: Gallery Image 6 Title, type: string }
+      - { name: gallery6-image, label: Gallery Image 6, type: image }
+      - { name: gallery7-title, label: Gallery Image 7 Title, type: string }
+      - { name: gallery7-image, label: Gallery Image 7, type: image }
+      - { name: gallery8-title, label: Gallery Image 8 Title, type: string }
+      - { name: gallery8-image, label: Gallery Image 8, type: image }
+
+      - { name: cta-heading, label: CTA Heading, type: string }
+      - { name: cta-text, label: CTA Text, type: text }
+      - { name: youtube-channel-link, label: YouTube Channel Link, type: string }
+
+  - name: radio
+    label: Radio Page
+    type: file
+    path: content/radio.json
+    fields:
+      - { name: hero-bg-image, label: Hero Background Image, type: image }
+      - { name: hero-heading, label: Hero Heading, type: string }
+      - { name: hero-tagline, label: Hero Tagline, type: string }
+
+      - { name: fm-frequency, label: FM Frequency, type: string }
+      - { name: listen-heading, label: Listen Heading, type: string }
+      - { name: radio-player-embed, label: Radio Player Embed HTML, type: text }
+
+      - { name: programming-heading, label: Programming Heading, type: string }
+      - { name: studio-phone1, label: Studio Phone 1, type: string }
+      - { name: studio-phone2, label: Studio Phone 2, type: string }
+      - { name: mobile-app-info, label: Mobile App Info, type: text }
